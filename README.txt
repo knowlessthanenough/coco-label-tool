@@ -80,6 +80,10 @@ val.txt：一個純文字檔案，列出了所有用於訓練的圖片檔案路�
 輸出merged_annotations.json會保存在第一個json相同的路徑
 (注意: 這只是合併兩個coco輸出的json檔案，其他資料如img, label仍需手動搬遷)
 
+如需結合兩個dataset檔案可以使用
+python3 combine_datasets.py dataset1 dataset2 path/to/place/the/ouytput
+(注意: 這合併兩個coc-yolo format檔案)
+
 刪除重複圖像運行 : python3 remove_duplicate.py filename.json
 
 檢查是否有任何剩餘的重複圖像運行: python3 check_repeat.py filename.json
@@ -102,4 +106,3 @@ Enter the class mapping as space-separated key-value pairs, e.g. "1:2 2:0 3:1":
             "name": "warning"
         }
 
-python3 combine_datasets.py dataset1 dataset2 path/to/place/the/ouytput
