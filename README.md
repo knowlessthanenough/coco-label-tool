@@ -145,4 +145,5 @@ Enter the class mapping as space-separated key-value pairs, e.g. "1:2 2:0 3:1":
             "id": 2,
             "name": "warning"
         }
-
+	
+DATA AUGMANTATION(flipping) : python3 aug_flipping.py dataset
