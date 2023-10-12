@@ -2,45 +2,85 @@ yolov7 takes yolo format data instead of coco format
 
 以下是一個典型的 YOLOV7 資料集的檔案架構：
 dataset/
+
 ├── annotations/
+
 │   ├── train.json
+
 │   ├── test.json
+
 │   └── val.json
+
 ├── images/
+
 │   ├── train/
+
 │   │    ├── image1.jpg
+
 │   │    ├── image2.jpg
+
 │   │    ├── ...
+
 │   │    └── imageN.jpg
+
 │   ├── test/
+
 │   │    ├── image1.jpg
+
 │   │    ├── image2.jpg
+
 │   │    ├── ...
+
 │   │    └── imageN.jpg
+
 │   └── val/
+
 │        ├── image1.jpg
+
 │        ├── image2.jpg
+
 │        ├── ...
+
 │        └── imageN.jpg
+
 ├── labels/
+
 │   ├── train/
+
 │   │    ├── image1.txt
+
 │   │    ├── image2.txt
+
 │   │    ├── ...
+
 │   │    └── imageN.txt
+
 │   ├── test/
+
 │   │    ├── image1.txt
+
 │   │    ├── image2.txt
+
 │   │    ├── ...
+
 │   │    └── imageN.txt
+
 │   └── val/
+
 │        ├── image1.txt
+
 │        ├── image2.txt
+
 │        ├── ...
+
 │        └── imageN.txt
+
 ├── train.txt
+
 ├── test.txt
+
 └── val.txt
+
 
 在這個檔案架構中，dataset 是資料集的根目錄，包含以下幾個子目錄和檔案：
 annotation 目錄: jeston file 包含所有要被處理的圖片影像資料，例如 大小, Bbox 位置等等。(gen by label studio(coco))
